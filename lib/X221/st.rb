@@ -7,8 +7,8 @@ module X221
 
     def initialize(raw_data)
       super(raw_data)
-      @transaction_set_identifier_code = @data_ary[1]
-      @transaction_set_control_number  = @data_ary[2]
+      @transaction_set_identifier_code = @data_elements[1]
+      @transaction_set_control_number  = @data_elements[2]
     end
 
     def name
