@@ -1,6 +1,5 @@
 # ruby parser for 835 file
-require_relative '../lib/segment'
-require_relative '../lib/isa'
-require_relative '../lib/file_835'
+require_relative '../lib/X221/isa'
 
-# Look into using Module.const_get(str)
+isa = X221::Isa.new("ISA*00*..........*01*SECRET....*ZZ*SUBMITTERS.ID..*ZZ* RECEIVERS.ID...*030101*1253*^*00501*000000905*1*T*:~")
+p isa
