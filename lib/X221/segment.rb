@@ -7,8 +7,8 @@ module X221
     attr_reader :segment_id, :name
 
     def initialize(raw_data)
-      @raw_data = raw_data.sub(SEGMENT_TERMINATOR, '').strip
-      @data_elements = @raw_data.split(DATA_ELEMENT_SEPARATOR)
+      @raw_data = Segmentable.cleanse_raw_data(raw_data)
+      @data_elements = Segmentable.build_data_elements(@raw_data)
       @segment_id = @data_elements.first
     end
   end
