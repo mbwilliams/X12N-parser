@@ -22,9 +22,5 @@ module X221
       @acknowledgement_requested           = @data_elements[14]
       @interchange_usage_indicator         = @data_elements[15]
     end
-
-    def name
-      SEGMENT_NAMES[:isa]
-    end
   end
 end
