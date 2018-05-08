@@ -7,7 +7,7 @@ module X221
       @segment = Segment.new(@raw_data)
     end
 
-    it "has label identified by the first component of the raw data string" do
+    it "has Segment ID identified by the first element of the raw data string" do
       expect(@segment.segment_id).to eq(@raw_data.split('*')[0])
     end
   end
