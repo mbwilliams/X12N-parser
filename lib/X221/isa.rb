@@ -20,7 +20,7 @@ module X221
                 :component_element_separator
 
     def initialize(raw_data)
-      super(raw_data)
+      super
       @authorization_information_qualifier = @data_elements[1]
       @authorization_information           = @data_elements[2]
       @security_information_qualifier      = @data_elements[3]

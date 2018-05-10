@@ -6,7 +6,7 @@ module X221
     attr_reader :transaction_set_control_number
 
     def initialize(raw_data)
-      super(raw_data)
+      super
       @transaction_set_identifier_code = @data_elements[1]
       @transaction_set_control_number  = @data_elements[2]
     end
