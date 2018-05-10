@@ -5,9 +5,10 @@ module X221
 
     SEGMENT_NAMES = {
       isa: 'Interchange Control Header',
+      iea: 'Interchange Control Trailer',
       gs:  'Functional Group Header',
       ge:  'Functional Group Trailer',
-      st:  'Transaction Set Header'
+      st:  'Transaction Set Header',
     }
 
     def self.cleanse_raw_data(raw_data)
