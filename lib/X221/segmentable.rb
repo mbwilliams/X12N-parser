@@ -1,7 +1,7 @@
 module X221
   module Segmentable
-    SEGMENT_TERMINATOR          = '~'
-    DATA_ELEMENT_SEPARATOR      = '*'
+    SEGMENT_TERMINATOR = '~'
+    ELEMENT_DELIMITER  = '*'
 
     SEGMENT_NAMES = {
       isa: 'Interchange Control Header',
@@ -17,7 +17,7 @@ module X221
     end
 
     def self.build_data_elements(cleansed_raw_data)
-      cleansed_raw_data.split(DATA_ELEMENT_SEPARATOR)
+      cleansed_raw_data.split(ELEMENT_DELIMITER)
     end
   end
 end
