@@ -13,6 +13,7 @@ module X221
       bpr: 'Beginning Segment for Payment Order/Remittance Advice',
       trn: 'Trace',
       cur: 'Currency',
+      ref: 'Reference Information',
     }
 
     def self.cleanse_raw_data(raw_data)
