@@ -23,6 +23,12 @@ module X221
       lx:  'Transaction Set Line Number',
       ts3: 'Transaction Statistics',
       ts2: 'Transaction Supplemental Statistics',
+      clp: 'Claim Level Data',
+      cas: 'Claims Adjustment',
+      mia: 'Medicare Inpatient Adjudication',
+      moa: 'Medicare Outpatient Adjudication',
+      amt: 'Monetary Amount Information',
+      qty: 'Quantity Information',
     }
 
     def self.cleanse_raw_data(raw_data)
