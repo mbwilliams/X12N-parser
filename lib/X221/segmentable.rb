@@ -29,6 +29,7 @@ module X221
       moa: 'Medicare Outpatient Adjudication',
       amt: 'Monetary Amount Information',
       qty: 'Quantity Information',
+      svc: 'Service Information',
     }
 
     def self.cleanse_raw_data(raw_data)
