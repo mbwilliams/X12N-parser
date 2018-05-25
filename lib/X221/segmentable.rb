@@ -30,6 +30,8 @@ module X221
       amt: 'Monetary Amount Information',
       qty: 'Quantity Information',
       svc: 'Service Information',
+      lq:  'Industry Code Identification',
+      plb: 'Provider Level Adjustment',
     }
 
     def self.cleanse_raw_data(raw_data)
