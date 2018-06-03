@@ -1,4 +1,3 @@
-
 module X221
   class InterchangeEnvelope
 
