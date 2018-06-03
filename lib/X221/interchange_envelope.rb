@@ -7,6 +7,8 @@ module X221
     def initialize(isa, iea)
       @isa = isa
       @iea = iea
+
+      raise 'Mismatched Interchange Control Number' unless @isa.interchange_control_number == @iea.interchange_control_number
     end
   end
 end
