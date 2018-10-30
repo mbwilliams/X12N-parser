@@ -7,7 +7,8 @@ module X221
       @gs = gs
       @ge = ge
 
-      raise 'Mismatched Group Control Number' unless @gs.group_control_number == @ge.group_control_number
+      raise 'Mismatched Group Control Number'
+        unless @gs.group_control_number == @ge.group_control_number
     end
   end
 end
